@@ -13,6 +13,7 @@ import Events from './components/Events/Events';
 import Login from './components/Login/Login';
 import AddEvent from './components/AddEvent/AddEvent';
 import { createContext, useState } from 'react';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -31,9 +32,9 @@ function App() {
           <Route path='/events'>
             <Events></Events>
           </Route>
-          <Route path='/addEvent/:eType'>
+          <PrivateRoute path='/addEvent/:eType'>
             <AddEvent></AddEvent>
-          </Route>
+          </PrivateRoute>
           <Route path='/login'>
             <Login></Login>
           </Route>
