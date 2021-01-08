@@ -1,0 +1,14 @@
+.header{
+  border: 1px solid black;
+}
+.nav img {
+  height: 50px;
+}
+.nav li{
+  display: inline;
+  margin-left: 50px;
+}
+.nav a{
+  text-decoration: none;
+  font-weight: bold;
+}
